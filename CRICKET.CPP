@@ -1,9 +1,13 @@
-#include<iostream.h>
+#include<iostream>
 #include<stdio.h>
 #include<stdlib.h>
-#include<graphics.h>
+// #include<graphics.h>
 #include<conio.h>
 #include<string.h>
+#include<cstdio>
+
+using namespace std;
+
 main()
 {system("cls");
 int op,q,Sc1,Sc2,chtoss,T1,T2,Tp,i,r,S=0,w=0,balls,ch,toss,Btssc1=0,Btssc2=0;
@@ -92,33 +96,33 @@ strcpy(S2,"BAN");
 else if(T2==10)
 strcpy(S2,"ZIM");
 cout<<"Enter the names of Players in Team 1 \n";
-{gets(Bt1);
-gets(Bt2);
-gets(Bt3);
-gets(Bt4);
-gets(Bt5);
-gets(Bt6);
-gets(Bt7);
-gets(Bt8);
-gets(Bt9);
-gets(Bt10);
-gets(Bt11);}
+{fgets(Bt1,sizeof(Bt1), stdin);
+fgets(Bt2,sizeof(Bt2), stdin);
+fgets(Bt3,sizeof(Bt3), stdin);
+fgets(Bt4,sizeof(Bt4), stdin);
+fgets(Bt5,sizeof(Bt5), stdin);
+fgets(Bt6,sizeof(Bt6), stdin);
+fgets(Bt7,sizeof(Bt7), stdin);
+fgets(Bt8,sizeof(Bt8), stdin);
+fgets(Bt9,sizeof(Bt9), stdin);
+fgets(Bt10,sizeof(Bt10), stdin);
+fgets(Bt11,sizeof(Bt11), stdin);}
 cout<<"Enter the names of Players in Team 2 \n";
-{gets(Bl1);
-gets(Bl2);
-gets(Bl3);
-gets(Bl4);
-gets(Bl5);
-gets(Bl6);
-gets(Bl7);
-gets(Bl8);
-gets(Bl9);
-gets(Bl10);
-gets(Bl11);}
+{fgets(Bl1,sizeof(Bl1), stdin);
+fgets(Bl2,sizeof(Bl2), stdin);
+fgets(Bl3,sizeof(Bl3), stdin);
+fgets(Bl4,sizeof(Bl4), stdin);
+fgets(Bl5,sizeof(Bl5), stdin);
+fgets(Bl6,sizeof(Bl6), stdin);
+fgets(Bl7,sizeof(Bl7), stdin);
+fgets(Bl8,sizeof(Bl8), stdin);
+fgets(Bl9,sizeof(Bl9), stdin);
+fgets(Bl10,sizeof(Bl10), stdin);
+fgets(Bl11,sizeof(Bl11), stdin);}
 cout<<"Who is the Captain of Team 1? \n";
-gets(Cp1);
+fgets(Cp1,sizeof(Cp1), stdin);
 cout<<"Who is the Captain of Team 2? \n";
-gets(Cp2);
+fgets(Cp2,sizeof(Cp2), stdin);
 cout<<Cp1;
 cout<<" and ";
 cout<<Cp2;
